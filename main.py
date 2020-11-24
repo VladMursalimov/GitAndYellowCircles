@@ -18,7 +18,7 @@ class Widget(QMainWindow):
     def paintEvent(self, event):
         super().paintEvent(event)
         painter = QPainter(self)
-        painter.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
+        painter.setBrush(QColor('yellow'))
         rad = randint(0, 100)
         painter.drawEllipse(self.point[0], self.point[1], rad, rad)
 
